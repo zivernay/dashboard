@@ -1,0 +1,2 @@
+project cards
+(article>(h2>lorem3)(p>lorem15)(div>(div.star-icon>img[src="./img/star.svg" alt="star"])(div.preview-icon>img[src="./img/eye-plus-outline.svg" alt="preview"])(div.folk-icon>img[src="./img/source-fork.svg" alt="source folk"])))*6
