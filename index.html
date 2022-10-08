@@ -11,8 +11,10 @@
     <section class="container">
         <header class="header-container">
             <div class="search-container">
-                <label for="search"><div class="search-icon"><img src="./img/search-icon.svg" alt="Search"></div></label>
-                <input type="search" name="query" id="search">
+                <div class="search-icon">
+                    <img src="./img/search-icon.svg" alt="Search">
+                </div>
+                <input type="search" name="query" id="search" aria-label="search">
             </div>
             <div class="person-info-container">
                 <div class="profile-pic"><div class="profile-picture-icon"><img src="./img/Placeholder.png" alt="profile picture"></div></div>
@@ -24,7 +26,11 @@
                     </p>
                 </div>
             </div>
-            <div class="notifications"><div class="notification-icon"><img src="./img/bell-outline.svg" alt="notifications"></div></div>
+            <div class="notifications">
+                <div class="notification-icon">
+                    <img src="./img/bell-outline.svg" alt="notifications">
+                </div>
+            </div>
             <div class="user-info-container">
                 <div class="profile-pic"><div class="profile-icon"><img src="./img/Placeholder.png" alt="profile picture"></div></div>
                 <div class="profile-text">
@@ -38,7 +44,6 @@
                 <div class="button"><button>Upload</button></div>
                 <div class="button"><button>Share</button></div>
             </div>
-
         </header>
 
         <section class="sidebar-container options">
@@ -88,7 +93,7 @@
             </div>
         </section>
 
-        <main class="projects">
+        <main class="projects-container">
             <h3>Personal projects</h3>
             <article>
                 <h2>Lorem, ipsum dolor.</h2>
@@ -187,7 +192,7 @@
                 </ul>
             </article>
         </section>
-        
+
     </section>
 </body>
 </html>
