@@ -220,6 +220,12 @@ ul {
 .heading {
   margin-bottom: 0;
 }
+.buttons .button {
+  background-color: #042dc9;
+  color: #ffffff;
+  padding: 0.5em 2em;
+  border-radius: 1em;
+}
 
 /* Options bar */
 .options {
@@ -260,5 +266,3 @@ ul {
 .announcement p {
   margin-top: 0.5em;
 }
-
-/* Trends */
