@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="container">
-        <header class="header-container">
+        <header class="header-container header-ribbon">
             <div class="search-container">
                 <div class="search-icon">
                     <img src="./img/search-icon.svg" alt="Search">
@@ -17,22 +17,23 @@
                 <input type="search" name="query" id="search" aria-label="search">
             </div>
             <div class="person-info-container">
-                <div class="profile-pic"><div class="profile-picture-icon"><img src="./img/Placeholder.png" alt="profile picture"></div></div>
+                <div class="profile-pic-icon big">
+                    <img src="./img/Placeholder.png" alt="profile picture">
+                </div>
                 <div class="profile-text">
-                    <p class="intro">Hello world</p>
-                    <p class="profile-id">
+                    <span class="intro">Hello world</span>
+                    <span class="profile-id">
                         <span class="user-name">Joe Mario</span> 
                         (@<span class="user-handle">Mkomana</span>)
-                    </p>
+                    </span>
                 </div>
             </div>
-            <div class="notifications">
-                <div class="notification-icon">
-                    <img src="./img/bell-ring-filled.svg" alt="notifications">
-                </div>
-            </div>
+
             <div class="user-info-container">
-                <div class="profile-pic"><div class="profile-icon"><img src="./img/Placeholder.png" alt="profile picture"></div></div>
+                <div class="notification-icon">
+                    <img src="./img/bell-outline.svg" alt="notifications">
+                </div>
+                <div class="profile-pic-icon"><img src="./img/Placeholder.png" alt="profile picture"></div>
                 <div class="profile-text">
                     <p class="profile-id">
                         <span class="username">Joe Mario</span>
@@ -49,7 +50,7 @@
         <section class="sidebar-container options">
             <div class="logo">
                 <div class="dashboard-icon"><img src="./img/view-dashboard-filled.svg" alt="dashboard-icon"></div>
-                <span>Dashboard</span>
+                <h2>Dashboard</h2>
             </div>
             <div class="menu-container main-options">
                 <div class="home">

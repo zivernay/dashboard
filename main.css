@@ -75,6 +75,7 @@ img {
     margin: 0.67em 0;
   }
 
+
   /*
 ========
   layout
@@ -88,22 +89,20 @@ img {
 .header-container {
     grid-column: 2 / 4;
     display: grid;
-    grid-template: auto auto / 1fr minmax(60px, 100px) minmax(120px, 300px);
+    grid-template: auto auto / minmax(260px,1fr) minmax(220px, 300px);
+    gap: 1rem;
 }
 .header-container .search-container {
     grid-area: 1 / 1 / 2 / 2;
 }
 .header-container .person-info-container {
-    grid-area: 2/ 1 / 3 / 2;
+    grid-area: 2/ 1 / 2 / 2;
 }
-.header-container .notifications {
+.header-container .user-info-container {
     grid-column: 2;
 }
-  .header-container .user-info-container {
-    grid-column: 3;
-}
 .header-container .buttons {
-    grid-area: 2 / 2 / 3 / 4;
+    grid-area: 2 / 2 / 3 / 3 ;
 }
 .search-container,
 .person-info-container,
@@ -114,7 +113,12 @@ img {
     align-items: center;
     gap: 10px;
 }
+.user-info-container,
+.buttons {
+  justify-content: flex-end;
+}
   
+
 .sidebar-container.options {
     grid-area: 1 / 1 / 3 / 2;
 }
@@ -122,16 +126,16 @@ img {
 .sidebar-container .menu-container {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 .sidebar-container {
-    display: grid;
-    grid-template-rows: min-content min-content;
     gap: 2em;
 }
 .logo,
 .menu-container > div {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .projects-container {
@@ -161,16 +165,43 @@ img {
 .sidebar-container .trend {
     display: flex;
 }
-
+.profile-text {
+  display: flex;
+  flex-direction: column;
+}
 /*
 ===============
 custom styles
 ===============
 */
 [class$="-icon"] {
-    min-width: 2em;
+  min-width: 1.5rem;
+  object-fit: contain;
 }
 [class$="-icon"] > img {
-    max-width: 120px;
+    max-width: 2.5rem;
     height: auto;
+}
+
+/* header */
+.search-container input {
+  flex: 1;
+}
+.header-ribbon {
+  padding: 1rem 2rem;
+  box-shadow: 0 5px 2rem gray;
+}
+.header-ribbon .profile-pic-icon.big img {
+  max-width: 3rem;
+}
+.profile-pic-icon img{
+  border-radius: 50%;
+}
+
+/* Options bar */
+.options {
+  background: rgb(97, 94, 156);
+  background: linear-gradient(153deg, rgb(82, 138, 166) 0%, rgb(9, 9, 121) 53%, rgb(4, 43, 200) 73%, rgb(0, 212, 255) 100%);
+  color: whitesmoke;
+  padding: 0 1rem;
 }
