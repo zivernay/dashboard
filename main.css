@@ -189,7 +189,7 @@ custom styles
 }
 .header-ribbon {
   padding: 1rem 2rem;
-  box-shadow: 0 5px 2rem gray;
+  box-shadow: 0 3px 15px rgb(82, 138, 166, 0.2);
 }
 .header-ribbon .profile-pic-icon.big img {
   max-width: 3rem;
@@ -204,4 +204,18 @@ custom styles
   background: linear-gradient(153deg, rgb(82, 138, 166) 0%, rgb(9, 9, 121) 53%, rgb(4, 43, 200) 73%, rgb(0, 212, 255) 100%);
   color: whitesmoke;
   padding: 0 1rem;
+}
+
+/* Projects */
+.container main {
+  background: rgba(82, 138, 166,0.025);
+  padding: 0 1rem;
+}
+.project {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 1px ridge whitesmoke;
+  border-left:5px solid #0a0b7a;
+  box-shadow: 1px 2px 5px rgba(82, 138, 166,0.25);
+  padding: 0.5rem 1rem;
 }
