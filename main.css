@@ -168,6 +168,8 @@ img {
 .profile-text {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 1em
 }
 /*
 ===============
@@ -186,6 +188,11 @@ input[type="search"],
 button {
   font-size: 100%;
   font-family: inherit;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 [class$="-icon"] {
   min-width: 1.5rem;
@@ -210,6 +217,9 @@ button {
 .profile-pic-icon img{
   border-radius: 50%;
 }
+.heading {
+  margin-bottom: 0;
+}
 
 /* Options bar */
 .options {
@@ -225,11 +235,30 @@ button {
   background: rgba(82, 138, 166,0.025);
   padding: 0 1rem;
 }
-.project {
+.project,
+.card {
   background-color: #ffffff;
   border-radius: 1rem;
   border: 1px ridge whitesmoke;
-  border-left:5px solid #0a0b7a;
   box-shadow: 1px 2px 5px rgba(82, 138, 166,0.25);
   padding: 0.5rem 1rem;
 }
+.project {
+  border-left:5px solid #0a0b7a;
+}
+/* Community */
+.community {
+  font-size: 0.8rem;
+}
+.announcement {
+  border-bottom: 1px solid silver;
+}
+.announcement h4 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.announcement p {
+  margin-top: 0.5em;
+}
+
+/* Trends */
